@@ -1,0 +1,32 @@
+.skills__text {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.skills__item {
+  display: flex;
+  justify-content: center;
+
+  &:not(:first-child) {
+    margin-top: 80px;
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+}
+
+.skills__list {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+  }
+  @media (min-width: $pc) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.skills-img {
+  width: 166px; 
+}
