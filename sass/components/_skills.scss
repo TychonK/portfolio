@@ -22,11 +22,11 @@
     row-gap: 80px;
   }
   @media (min-width: $pc) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr  1fr;
+    row-gap: 120px;
   }
 }
 
 .skills-img {
-  width: 166px; 
+  width: 166px;
 }
