@@ -1,16 +1,24 @@
 .skills__text {
   margin-top: 50px;
   margin-bottom: 70px;
+  font-size: 26px;
 }
 
 .skills__item {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
 
   &:not(:first-child) {
     margin-top: 80px;
     @media (min-width: $tablet) {
       margin: 0;
+    }
+  }
+  @media (min-width: $tablet) and (max-width: $pc) {
+    &:last-child {
+      grid-column: span 2;
     }
   }
 }
@@ -29,4 +37,8 @@
 
 .skills-img {
   width: 166px;
+}
+
+.skill_caption {
+  font-size: 22px;
 }
