@@ -18,8 +18,27 @@ openclose = () => {
     menuBtnRef.addEventListener("click", openclose);
 })();
 
+function readMore(e) {
+    const dots = document.querySelectorAll("#dots");
+    const moreText = document.querySelectorAll("#more");
+    const readMoreBtn = document.querySelectorAll("#readMoreBtn");
+
+    const num = e.target.dataset.indexNumber;
+
+    if (dots[num].style.display === "none") {
+        dots[num].style.display = "inline";
+        readMoreBtn[num].innerHTML = "Read more";
+        moreText[num].classList.remove("expanded")
+    } else {
+        dots[num].style.display = "none";
+        readMoreBtn[num].innerHTML = "Read less";
+        moreText[num].classList.add("expanded");
+    }
+}
+
 (() => {
     menuItems = document.querySelectorAll(".anchor-link")
     Array.from(menuItems).map(item => item.addEventListener("click", openclose))
-
+    readMoreButtons = document.querySelectorAll("#readMoreBtn")
+    Array.from(readMoreButtons).map(item => item.addEventListener("click", readMore))
 })();
