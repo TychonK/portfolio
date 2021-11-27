@@ -42,3 +42,30 @@ function readMore(e) {
     readMoreButtons = document.querySelectorAll("#readMoreBtn")
     Array.from(readMoreButtons).map(item => item.addEventListener("click", readMore))
 })();
+
+// When the user scrolls down 50px from the top of the document, show the button
+const nav = document.querySelector(".navigation-fixed");
+
+window.onscroll = throttle(scrollFunction, 100);
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 300) {
+        if(nav.classList.value.includes("show")) {
+            return
+        }
+        console.log("scroll")
+        nav.classList.add("show");
+    } else {
+      nav.classList.remove("show");  
+  }
+}
+
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+}
