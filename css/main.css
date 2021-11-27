@@ -815,12 +815,11 @@ img {
 
 .read-more__button {
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-left: 5px;
   padding: 1px 8px;
-  background-color: #f1f1f1;
-  color: black;
-  border: 1px solid #181818;
+  background-color: #00a2ff;
+  color: white;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
