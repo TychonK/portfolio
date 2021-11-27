@@ -45,6 +45,7 @@ function readMore(e) {
 
 // When the user scrolls down 50px from the top of the document, show the button
 const nav = document.querySelector(".navigation-fixed");
+const mobileNavBtn = document.querySelector(".mobile-menu")
 
 window.onscroll = throttle(scrollFunction, 100);
 
@@ -55,8 +56,10 @@ function scrollFunction() {
         }
         console.log("scroll")
         nav.classList.add("show");
+        mobileNavBtn.classList.add("mobile-menu-fixed")
     } else {
-      nav.classList.remove("show");  
+        nav.classList.remove("show");
+        mobileNavBtn.classList.remove("mobile-menu-fixed")
   }
 }
 

@@ -37,6 +37,17 @@
     background: white;
     color: black;
   }
+  
+  .download-icon {
+    width: 22px;
+    fill: #fff;
+
+    margin-left: 12px;
+
+    @media(max-width: $tablet) {
+      width: 16px;
+    }
+  }
 
   @media (min-width: $tablet) {
     margin-left: auto;

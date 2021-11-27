@@ -1,3 +1,17 @@
+.mobile-menu {
+  top: -10%;
+  right: 10%;
+  z-index: 10;
+
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.mobile-menu-fixed {
+  position: fixed;
+  top: 10px;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -16,6 +30,7 @@
   padding-bottom: 57px;
 
   background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
 
   pointer-events: none;
 
