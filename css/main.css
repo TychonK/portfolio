@@ -1036,4 +1036,106 @@ img {
   height: 100%;
   fill: #404040;
 }
+
+.decor-triangle-long {
+  width: 70px;
+  height: 56px;
+  position: absolute;
+  top: 179px;
+  right: 10%;
+}
+
+@media (max-width: 350px) {
+  .decor-triangle-long {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .decor-triangle-long {
+    right: 50%;
+    left: 50%;
+    top: 130px;
+  }
+}
+
+.decor-log {
+  width: 124px;
+  position: absolute;
+  top: 763px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .decor-log {
+    top: 605px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .decor-log {
+    top: 790px;
+  }
+}
+
+.decor-cube {
+  position: absolute;
+  width: 62px;
+  top: 1292px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .decor-cube {
+    top: 1070px;
+  }
+}
+
+.decor-cubes {
+  position: absolute;
+  width: 62px;
+  top: 4480px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .decor-cubes {
+    top: 2980px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .decor-cubes {
+    top: 2675px;
+  }
+}
+
+.decor-triangle {
+  width: 60px;
+  position: absolute;
+  top: 7840px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .decor-triangle {
+    top: 6225px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .decor-triangle {
+    top: 6240px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
