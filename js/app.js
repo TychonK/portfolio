@@ -18,7 +18,7 @@ import readMore from './readMore.js';
     Array.from(readMoreButtons).map(item => item.addEventListener("click", readMore))
 
 
-// When the user scrolls down 50px from the top of the document, show the button
+// When the user scrolls down 50px from the top of the document, show the menu
 
 const nav = document.querySelector(".navigation-fixed");
 const mobileNavBtn = document.querySelector(".mobile-menu")
