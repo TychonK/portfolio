@@ -7,13 +7,13 @@ import SimpleParallax from "simple-parallax-js";
 // Add simple parallax scroll effect to all images on the website
 
 const imagesHero = document.querySelectorAll('[data-hero]');
-new SimpleParallax(imagesHero, { orientation: "down" })
+new SimpleParallax(imagesHero, { orientation: "down", delay: 1})
 
 const imagesPortfolio = document.querySelectorAll('[data-portfolio]')
 imagesPortfolio.forEach((one, index) => {
     Boolean(isOdd(index)) ?
-        new SimpleParallax(one, { orientation: "up", delay: 2, }) :
-        new SimpleParallax(one, { orientation: "down", delay: 2, })
+        new SimpleParallax(one, { orientation: "up", delay: 1, }) :
+        new SimpleParallax(one, { orientation: "down", delay: 1, })
 })
 
 function isOdd(number) {return number % 2}
