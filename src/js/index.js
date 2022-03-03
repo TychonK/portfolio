@@ -2,6 +2,11 @@ import throttle from './throttle.js'
 import { openclose } from './openCloseMenu.js'
 import readMore from './readMore.js';
 
+import SimpleParallax from "simple-parallax-js";
+const images = document.querySelectorAll('img');
+
+new SimpleParallax(images, {orientation: "down"})
+
     // Open and close mobile navigation menu button listeners
 
     const menuBtnRef = document.querySelector("[data-menu-button]");
