@@ -527,10 +527,23 @@ var _readMoreJs = require("./readMore.js");
 var _readMoreJsDefault = parcelHelpers.interopDefault(_readMoreJs);
 var _simpleParallaxJs = require("simple-parallax-js");
 var _simpleParallaxJsDefault = parcelHelpers.interopDefault(_simpleParallaxJs);
-const images = document.querySelectorAll('img');
-new _simpleParallaxJsDefault.default(images, {
+const imagesHero = document.querySelectorAll('[data-hero]');
+new _simpleParallaxJsDefault.default(imagesHero, {
     orientation: "down"
 });
+const imagesPortfolio = document.querySelectorAll('[data-portfolio]');
+imagesPortfolio.forEach((one, index)=>{
+    Boolean(isOdd(index)) ? new _simpleParallaxJsDefault.default(one, {
+        orientation: "up",
+        delay: 2
+    }) : new _simpleParallaxJsDefault.default(one, {
+        orientation: "down",
+        delay: 2
+    });
+});
+function isOdd(number) {
+    return number % 2;
+}
 // Open and close mobile navigation menu button listeners
 const menuBtnRef = document.querySelector("[data-menu-button]");
 menuBtnRef.addEventListener("click", _openCloseMenuJs.openclose);

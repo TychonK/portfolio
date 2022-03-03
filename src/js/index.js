@@ -3,9 +3,18 @@ import { openclose } from './openCloseMenu.js'
 import readMore from './readMore.js';
 
 import SimpleParallax from "simple-parallax-js";
-const images = document.querySelectorAll('img');
 
-new SimpleParallax(images, {orientation: "down"})
+const imagesHero = document.querySelectorAll('[data-hero]');
+new SimpleParallax(imagesHero, { orientation: "down" })
+
+const imagesPortfolio = document.querySelectorAll('[data-portfolio]')
+imagesPortfolio.forEach((one, index) => {
+    Boolean(isOdd(index)) ?
+        new SimpleParallax(one, { orientation: "up", delay: 2, }) :
+        new SimpleParallax(one, { orientation: "down", delay: 2, })
+})
+
+function isOdd(number) {return number % 2}
 
     // Open and close mobile navigation menu button listeners
 
