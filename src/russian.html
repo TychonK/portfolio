@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. I'm studying at courses Web and mobile design interfaces in IT-Academy. Ready to implement excellent projects with wonderful people.">
+    <title>Фул-стэк Вэб разработчик | Тихон Кругляк - портфолио</title>
+    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+    <!-- <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"> -->
+</head>
+
+<body>
+
+    <header>
+
+        <section class="section header">
+
+            <div class="container">
+
+                <!-- Tablet and PC Navigation -->
+
+                <nav class="navigation">
+
+                    <ul class="navigation__list">
+
+                        <li class="navigation__item">
+
+                            <a href="./index.html" class="navigation__link home">
+                                Домой
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#about-me" class="navigation__link">
+                                Про меня
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#skills" class="navigation__link">
+                                Навыки
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#portfolio" class="navigation__link">
+                                Портфолио
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#footer" class="navigation__link">
+                                Контакты
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <nav class="navigation-fixed">
+
+                    <ul class="navigation__list">
+
+                        <li class="navigation__item">
+
+                            <a href="./index.html" class="navigation__link home">
+                                Домой
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#about-me" class="navigation__link">
+                                Про меня
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#skills" class="navigation__link">
+                                Навыки
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#portfolio" class="navigation__link">
+                                Портфолио
+                            </a>
+
+                        </li>
+
+                        <li class="navigation__item">
+
+                            <a href="#footer" class="navigation__link">
+                                Контакты
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="header-pc--wrapper">
+
+                    <h1 class="author-name">Тихон <br> Кругляк</h1>
+
+                    <h3 class="author-info">Фул-стэк Вэб разработчик<br>17 лет, Варшава</h3>
+
+                    <div class="language-container">
+                        <a href="./russian.html" class="language-link language-active">RU</a>
+
+                        <a href="./index.html" class="language-link"> ENG</a>
+                    </div>
+
+                </div>
+
+                <!-- Mobile -->
+
+                <div class="header__wrapper">
+
+                    <!-- Main Header Information -->
+
+                    <div class="header--info">
+
+                        <h1 class="name">Тихон <br> Кругляк</h1>
+                        <h2 class="description">Фул-стэк Вэб разработчик<br> 17 лет, Варшава</h2>
+
+                        <a href="" class="language--pc">
+                            RU
+                        </a>
+
+                        <a href="" class="language--pc">
+                            ENG
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Navigation Burger Menu -->
+
+                    <nav class="mobile-menu">
+
+                        <button class="burger-button" type="button" aria-expanded="false" data-menu-button>
+
+                            <svg class="burger-icon" aria-label="Переключатель мобильного меню">
+                                <use class="icon-burger" href="./images/symbol-defs.svg#icon-burger"></use>
+                                <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+                            </svg>
+
+                        </button>
+
+                        <div class="menu-container" data-menu>
+
+                            <div class="menu-wrapper">
+
+                                <ul class="links-list">
+
+                                    <li class="links__item">
+                                        <a href="#" class="links__link home anchor-link">Домой</a>
+                                    </li>
+
+                                    <li class="links__item">
+                                        <a href="#about-me" class="links__link anchor-link">Про меню</a>
+                                    </li>
+
+                                    <li class="links__item">
+                                        <a href="#skills" class="links__link anchor-link">Навыки</a>
+                                    </li>
+
+                                    <li class="links__item">
+                                        <a href="#portfolio" class="links__link anchor-link">Портфолио</a>
+                                    </li>
+
+                                    <li class="links__item">
+                                        <a href="#footer" class="links__link anchor-link">Контакты</a>
+                                    </li>
+
+                                </ul>
+
+                                <div class="language-wrapper">
+
+                                    <a href="./russian.html" class="language active">RU</a>
+
+                                    <a href="./index.html" class="language">ENG</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+
+                <img src="./images/me-compressed.jpg" alt="Photo of me" class="man-img">
+                <img src="./images/me-compressed.jpg" alt="Photo of me" class="man-pc">
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <!-- About Me -->
+
+        <section class="section about-me--section" id="about-me">
+
+            <div class="container">
+
+                <h2 class="title">Про меня</h2>
+
+                <ul class="about__list">
+
+                    <li class="about__item">
+                        <p class="text">Привет, я Тихон – Фул-стэк вэб разработчик из Киева. <br class="about-br--pc">
+                            Я интересуюсь программированием и всем что с этим связано.</p>
+                    </li>
+
+                    <li class="about__item">
+                        <p class="text">Я учусь на
+                            курсах <br class="about-br"> "Фул-стэк вэб <br class="about-br--pc"> разработка" <br
+                                class="about-br"> в академии GoIT.</p>
+                    </li>
+
+                    <li class="about__item">
+                        <p class="text">Готов реализовывать отличные проекты <br class="about-br--pc"> <br
+                                class="about-br"> с прекрасными людьми.</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+
+        <section class="section" id="skills">
+
+            <div class="container">
+
+                <h2 class="title">Навыки</h2>
+
+                <p class="text skills__text">Я работаю с</p>
+
+                <ul class="skills__list">
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-git"></use>
+                        </svg>
+
+                        <p class="skill_caption">Git</p>
+
+                        <!-- Stars -->
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-node-dot-js"></use>
+                        </svg>
+
+                        <p class="skill_caption">Node.js</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-empty"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-empty"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-empty"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-empty"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-empty"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-react"></use>
+                        </svg>
+
+                        <p class="skill_caption">React.js</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-half"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-redux"></use>
+                        </svg>
+
+                        <p class="skill_caption">Redux</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-empty"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-javascript"></use>
+                        </svg>
+
+                        <p class="skill_caption">JavaScript</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-half"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-html5"></use>
+                        </svg>
+
+                        <p class="skill_caption">HTML5</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-css3"></use>
+                        </svg>
+
+                        <p class="skill_caption">CSS3 and SASS</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-figma"></use>
+                        </svg>
+
+                        <p class="skill_caption">Figma</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+                    <li class="skills__item">
+
+                        <svg class="skill__icon">
+                            <use href="./images/symbol-defs.svg#icon-adobephotoshop"></use>
+                        </svg>
+
+                        <p class="skill_caption">Photoshop</p>
+
+                        <!-- <ul class="stars-container">
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                            <li class="stars_item">
+                                <svg class="stars_icon">
+                                    <use href="./images/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </li>
+
+                        </ul> -->
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Portfolio -->
+
+        <section class="section" id="portfolio">
+
+            <div class="container">
+
+                <h2 class="title">Портфолио</h2>
+
+                <ul class="portfolio__list">
+
+                    <li class="portfolio__item">
+
+                        <a href="https://tychonk.github.io/group-project-1/" class="portfolio__link" target="_blank">
+
+                            <img loading="lazy" width:="100%" class="portfolio__img" src="./images/donut-progressive.jpeg" alt="work-1">
+
+                            <p class="portfolio__text">Oh My Donut - Групповой проект</p>
+
+                        </a>
+
+                        <p class="project-caption">
+                            Oh My Donut - это веб-сайт группового проекта, в котором я выступал в качестве тим лида. Веб-сайт
+                            имеет аккуратный адаптивный дизайн.
+                            Он подчеркивает знания HTML и CSS (SASS) через его сложные формы, несколько уровневый
+                            фон и адаптивность.
+                            Мне, как руководителю группы, было поручено управлять своей командой, проводить онлайн-встречи, поддерживать
+                            каждого товарища по команде и отслеживать их
+                            индивидуальный прогресс. <span id="dots">...</span><span id="more">,
+                                Постановка задач, учитывая текущее состояние проекта, тем, кто выполнил свою
+                                часть и / или имеет больше свободного времени.
+                                Более того, создание стола Trello и управление им нахожилось под моей ответственностью. А также, я
+                                проверял каждый коммит и объединял
+                                новый код со старым.
+                                Я стремился помочь каждому члену группы в решении любых проблем, с которыми они сталкивались. Этот проект
+                                важен, так как заставил меня
+                                развивать не только важные технические знания в области git | групповой работы на GitHub, но и командный 
+                                менеджмент, лидерские
+                                навыки, а также общению и поддержке.</span>
+                            <button id="readMoreBtn" data-index-number="0" class="read-more__button">Читать больше</button>
+                        </p>
+
+                    </li>
+
+                    <li class="portfolio__item">
+
+                        <a href="https://elena040683.github.io/team-project-find-best-events/" class="portfolio__link"
+                            target="_blank">
+
+                            <img loading="lazy" class="portfolio__img" src="./images/event-booster-progressive.jpeg" alt="work-2">
+
+                            <p class="portfolio__text">Event Booster - Групповой проект</p>
+
+                        </a>
+
+                        <p class="project-caption">
+                            Event Booster - еще один командный проект. Здесь я выступал как HTML, CSS (SASS) и JS.
+                            разработчик.
+                            В этой работе упор был сделан на JavaScript и связь с базой данных через Rest
+                            API.
+                            В этот раз я не только написал разметку хедера и футера, но и принял участие в разработке
+                            необходимого JS-кода для
+                            запросов на API. Я позаботился о том, чтобы работал поисковый ввод<span id="dots">...</span><span
+                                id="more">, вместе с фильтром страны.
+                                Еще одна уникальная функция, которую я реализовал, - это кнопка прокрутки страницы вверх, которая появляется, когда пользователь
+                                прокручивает окно вниз.
+                                Хотя я не был руководителем группы в этом проекте, я все же помогал каждому товарищу по команде с
+                                их частью работы.
+                                К моему удовольствию, моя группа провозгласила меня «Техническим королем».
+                                Этот проект важен, поскольку демонстрирует широкий спектр навыков JavaScript.
+                                Кроме того, он подготовил меня к большой и трудоемкой работе, научив меня терпению, и
+                                решению проблем,
+                                и поспособстовал дальнейшему развитию внимания к деталям и творчества.</span>
+                            <button id="readMoreBtn" data-index-number="1" class="read-more__button">Читать больше</button>
+                        </p>
+
+                    </li>
+
+                    <li class="portfolio__item">
+
+                        <a href="https://tychonk.github.io/goit-markup-hw-08/" class="portfolio__link" target="_blank">
+
+                            <img loading="lazy" 
+                            class="portfolio__img" src="./images/web-studio-progressive.jpeg" alt="work-3">
+
+                            <p class="portfolio__text">Web Studio - Индивидуальная работа</p>
+
+                        </a>
+
+                        <p class="project-caption">
+                            Веб-студия - это двухстраничный сайт, представляющий местный бизнес по веб-разработке.
+                            Это был мой первый индивидуальный проект, который включает в себя все: HTML, CSS (SASS) и JS-кодирование.
+                            Он показывает обширные знания в этих областях. В частности, лучшие практики HTML и CSS
+                            использовались для изображений и значков.
+                            Изображения были оптимизированы и снабжены настройками "scrset" для обеспечения хорошего качества<span
+                                id="dots">...</span><span id="more" class="more"> на разный экранах. Спрайт SVG с оптимизированными значками SVG был создан для хранения множества векторных изображений. Все элементы имеют
+                                собственные стили CSS. Я лично отвечал за выполнение всех задач. Отличительной особенностью данного проекта является его
+                                способность хранить информацию, заполненную пользователем, во входных данных формы. Это делается путем сохранения текста
+                                в формате JSON в локальное хранилище. Это предотвращает нежелательное удаление информации в случае случайного отключения
+                                интернета. Кроме того, была реализована регулировка функции сохранения, чтобы ограничить нагрузку на браузер при помощи библиотеки «Лодаш». 
+                                На второй странице "портфолио" веб-студии есть рабочие параметры фильтрации. Создав
+                                этот веб-сайт, я научился полагаться на себя, набрался терпения и развил исследовательские навыки.</span>
+                            <button id="readMoreBtn" data-index-number="2" class="read-more__button">Читать больше</button>
+                        </p>
+
+                    </li>
+
+                    <li class="portfolio__item">
+
+                        <a href="https://tychonk.github.io/mntn-landing-page/" class="portfolio__link" target="_blank">
+
+                            <img loading="lazy" class="portfolio__img" src="./images/mntn-progressive.jpeg" alt="work-4">
+
+                            <p class="portfolio__text">MNTN Лэндинг - Индивидуальная работа</p>
+
+                        </a>
+
+                        <p class="project-caption">
+                            MNTN - это проект лэндинговой страницы, ориентированный на привлекательный дизайн.
+                            Главная особенность этого веб-сайта - эффект параллакс-прокрутки фона.
+                            Я реализовал такой визуальный эффект с помощью ванильного кода JavaScript.
+                            Всю эту работу проделал сам.
+                            Помимо технического аспекта, этот проект дал мне возможность улучшить исследовательские навыки вместе с навыком решениея проблем.
+                        </p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Decor SVGs -->
+
+        <!-- <svg class="decor-triangle-long">
+            <use href="./images/symbol-defs-decor.svg#icon-d-triangle"></use>
+        </svg>
+        <svg class="decor-log">
+            <use href="./images/symbol-defs-decor.svg#icon-log"></use>
+        </svg>
+        <svg class="decor-cube">
+            <use href="./images/symbol-defs-decor.svg#icon-cube"></use>
+        </svg>
+        <svg class="decor-cubes">
+            <use href="./images/symbol-defs-decor.svg#icon-cubes"></use>
+        </svg>
+        <svg class="decor-triangle">
+            <use href="./images/symbol-defs-decor.svg#icon-triangle"></use>
+        </svg> -->
+
+    </main>
+
+    <footer id="footer">
+
+        <section class="section footer">
+
+            <div class="container">
+
+                <div class="footer-wrapper">
+
+                    <h2 class="title">Контакты</h2>
+
+                    <p class="text contacts__text">Хотите узнать больше или просто початиться? <br> Милости прошу!</p>
+
+                    <a href="./downloads/Junior_Full_stack_dev_resume_-_Tychon_Kruhlyak.pdf" download class="download">
+                        Скачать резюме
+                        <svg class="download-icon">
+                            <use href="./images/symbol-defs.svg#icon-download"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="social__list">
+
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/in/tychon-k-197a4b226" target="_blank">
+                                <svg class="social__icon">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="mailto: kruhlyak.tychon@gmail.com">
+                                <svg class="social__icon">
+                                    <use href="./images/symbol-defs.svg#icon-mail-envelope-closed"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/tyhon_krug/" target="_blank">
+                                <svg class="social__icon">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <p class="footer__text">Лайкните меня на <br> LinkedIn, Instagram<br>Или отправьте сообщение на имэйл</p>
+
+                    <img loading="lazy"
+                        srcset="./images/favicon.png 1x, ./images/favicon@2x.png 2x" 
+                        src="./images/favicon.png"
+                        alt="Logo" class="logo">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
+
+</body>
+
+</html>

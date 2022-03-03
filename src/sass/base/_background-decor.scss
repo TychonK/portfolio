@@ -1,0 +1,72 @@
+.decor-triangle-long {
+    width: 70px;
+    height: 56px;
+    position: absolute;
+    top: 179px;
+    right: 10%;
+
+    @media (max-width: 350px){
+        display: none;
+    }
+
+    @media (min-width: $tablet) {
+        right: 50%;
+        left: 50%;
+        top: 130px;
+    }
+}
+
+.decor-log {
+    width: 124px;
+    position: absolute;
+    top: 763px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $tablet) {
+        top: 605px;
+    }
+    @media (min-width: $pc) {
+        top: 790px;
+    }
+}
+
+.decor-cube {
+    position: absolute;
+    width: 62px;
+    top: 1292px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $tablet) and (max-width: ($pc - 1px)) {
+        top: 1070px;
+    }
+}
+
+.decor-cubes {
+    position: absolute;
+    width: 62px;
+    top: 4480px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $tablet) {
+        top: 2980px;
+        width: 80px;
+    }
+    @media (min-width: $pc) {
+        top: 2675px;
+    }
+}
+
+.decor-triangle {
+    width: 60px;
+    position: absolute;
+    top: 7840px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $tablet) {
+        top: 6225px;
+        width: 80px;
+    }
+    @media (min-width: $pc) {
+        top: 6240px;
+    }
+}
